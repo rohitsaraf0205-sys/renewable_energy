@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity 3 — Off‑grid Solar‑Powered Irrigation Pumping • Renewable Energy System Designs</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    
+        <aside class="sidebar" role="navigation" aria-label="Renewable Energy Portfolio">
+          <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <h1>Renewable Energy Portfolio</h1>
+          </div>
+          <nav class="nav"><a href="index.html" class="" aria-current="page" aria-label="🏠 Home">🏠 Home</a>
+<a href="activity-1.html" class="" aria-current="page" aria-label="Activity 1 — Hybrid Solar–Wind">Activity 1 — Hybrid Solar–Wind</a>
+<a href="activity-2.html" class="" aria-current="page" aria-label="Activity 2 — Wave → Desalination">Activity 2 — Wave → Desalination</a>
+<a href="activity-3.html" class="active" aria-current="page" aria-label="Activity 3 — Solar Irrigation">Activity 3 — Solar Irrigation</a></nav>
+          <div class="footer-note">© Your Name • Accessible, fast, and responsive.</div>
+        </aside>
+        
+    <main class="content">
+      <header class="header">
+        <h2>Activity 3 — Off‑grid Solar‑Powered Irrigation Pumping</h2>
+        <span class="badge">Block diagram + 150–200 words (current total ≈ 169 words)</span>
+      </header>
+<button class=\"theme-toggle\" onclick=\"toggleTheme()\">Toggle Theme</button>
+
+      <div class="card section">
+        <figure>
+          <img src="assets/diagrams/activity-3.png" alt="Solar PV driving a pump via VFD with filtration, storage, and field distribution">
+          <figcaption>Diagram provided by you. Optimized for display. Replace if you update the final version.</figcaption>
+        </figure>
+      </div>
+
+      <div class="card section kv">
+        <h3>Source of energy</h3>
+        <p>Solar PV provides daytime energy for irrigation. The array is sized from daily water demand and local peak‑sun‑hours,
+with orientation and tilt optimized for harvest. No grid is assumed. Where clouds are frequent, a small buffer store
+or oversized array improves flow continuity.</p>
+
+        <h3>Conversion process</h3>
+        <p>PV feeds a solar pump inverter with MPPT. The VFD controls an AC induction or BLDC motor to drive a submersible or
+centrifugal pump. Pressure and level interlocks protect the pump from dry‑run and over‑pressure. Optional supercapacitor
+or small battery smooths transients and mitigates cloud flicker.</p>
+
+        <h3>Output / utilization</h3>
+        <p>Water is lifted from a borewell, canal, or pond through a foot valve and strainer to filtration and an elevated tank.
+Distribution uses drip for efficiency or sprinklers for coverage. Storage provides 1–3 days reserve to meet irrigation
+windows even with variable sunlight.</p>
+
+        <h3>Real-world relevance</h3>
+        <p>Solar pumping replaces diesel costs, reduces noise and emissions, and enables predictable daytime irrigation in
+off‑grid farms. It supports water‑saving practices, improves yield stability, and lowers long‑term operating expense.</p>
+      </div>
+    </main>
+  </div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const isLight = html.classList.toggle("light-theme");
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+}
+(function() {
+  const saved = localStorage.getItem("theme");
+  if (saved === "light") {
+    document.documentElement.classList.add("light-theme");
+  }
+})();
+</script>
+
+</body>
+</html>

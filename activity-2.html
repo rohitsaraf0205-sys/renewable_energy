@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity 2 — Wave Energy Conversion Integrated with Desalination • Renewable Energy System Designs</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    
+        <aside class="sidebar" role="navigation" aria-label="Renewable Energy Portfolio">
+          <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <h1>Renewable Energy Portfolio</h1>
+          </div>
+          <nav class="nav"><a href="index.html" class="" aria-current="page" aria-label="🏠 Home">🏠 Home</a>
+<a href="activity-1.html" class="" aria-current="page" aria-label="Activity 1 — Hybrid Solar–Wind">Activity 1 — Hybrid Solar–Wind</a>
+<a href="activity-2.html" class="active" aria-current="page" aria-label="Activity 2 — Wave → Desalination">Activity 2 — Wave → Desalination</a>
+<a href="activity-3.html" class="" aria-current="page" aria-label="Activity 3 — Solar Irrigation">Activity 3 — Solar Irrigation</a></nav>
+          <div class="footer-note">© Your Name • Accessible, fast, and responsive.</div>
+        </aside>
+        
+    <main class="content">
+      <header class="header">
+        <h2>Activity 2 — Wave Energy Conversion Integrated with Desalination</h2>
+        <span class="badge">Block diagram + 150–200 words (current total ≈ 172 words)</span>
+      </header>
+<button class=\"theme-toggle\" onclick=\"toggleTheme()\">Toggle Theme</button>
+
+      <div class="card section">
+        <figure>
+          <img src="assets/diagrams/activity-2.png" alt="Wave energy converter coupled to SWRO with power conditioning and energy recovery">
+          <figcaption>Diagram provided by you. Optimized for display. Replace if you update the final version.</figcaption>
+        </figure>
+      </div>
+
+      <div class="card section kv">
+        <h3>Source of energy</h3>
+        <p>Incident ocean waves provide the primary energy. A site‑appropriate wave energy converter—such as a point absorber
+or oscillating water column—is selected based on resource spectrum and depth. Grid or diesel remains optional for
+commissioning and rare calm periods.</p>
+
+        <h3>Conversion process</h3>
+        <p>The WEC drives a power‑take‑off that outputs DC via rectifier and smoothing, or a mechanical pump path. A variable‑
+frequency drive powers the high‑pressure pump for seawater reverse osmosis. An isobaric energy‑recovery device
+transfers pressure from concentrate to incoming feed, cutting specific energy and stabilizing operation when waves
+fluctuate. SCADA coordinates flows, pressures, and safe shutdowns.</p>
+
+        <h3>Output / utilization</h3>
+        <p>Product water leaves the RO racks to a permeate tank, receives post‑treatment for remineralization and disinfection,
+and is distributed for potable use. Brine is routed through the ERD to an outfall designed for dilution and mixing
+per local environmental limits.</p>
+
+        <h3>Real-world relevance</h3>
+        <p>Wave‑assisted desalination reduces fuel dependence for islands and remote coasts. Coupling variable renewables with
+pressure recovery and limited storage delivers reliable drinking water while lowering operating costs and emissions.</p>
+      </div>
+    </main>
+  </div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const isLight = html.classList.toggle("light-theme");
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+}
+(function() {
+  const saved = localStorage.getItem("theme");
+  if (saved === "light") {
+    document.documentElement.classList.add("light-theme");
+  }
+})();
+</script>
+
+</body>
+</html>

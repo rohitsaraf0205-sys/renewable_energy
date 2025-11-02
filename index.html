@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renewable Energy System Designs</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    
+    <aside class="sidebar" role="navigation" aria-label="Renewable Energy Portfolio">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Renewable Energy Portfolio</h1>
+      </div>
+      <nav class="nav"><a href="index.html" class="active" aria-current="page" aria-label="🏠 Home">🏠 Home</a>
+<a href="activity-1.html" class="" aria-current="page" aria-label="Activity 1 — Hybrid Solar–Wind">Activity 1 — Hybrid Solar–Wind</a>
+<a href="activity-2.html" class="" aria-current="page" aria-label="Activity 2 — Wave → Desalination">Activity 2 — Wave → Desalination</a>
+<a href="activity-3.html" class="" aria-current="page" aria-label="Activity 3 — Solar Irrigation">Activity 3 — Solar Irrigation</a></nav>
+      <div class="footer-note">© Your Name • Accessible, fast, and responsive.</div>
+    </aside>
+    
+    <main class="content">
+      <header class="header">
+        <h2>Renewable Energy System Designs</h2>
+        <span class="badge">Portfolio</span>
+      </header>
+<button class=\"theme-toggle\" onclick=\"toggleTheme()\">Toggle Theme</button>
+
+      <div class="card section">
+        <p>This portfolio presents three energy system designs. Each activity includes a block diagram and a concise explanation of source of energy, conversion, output/utilization, and real-world relevance.</p>
+        <div class="grid-2 section">
+          <div>
+            <h3>Activity 1 — Hybrid Solar–Wind for Rural Clinic</h3>
+            <p>Off-grid micro-system with PV + wind, battery storage, and hybrid inverter serving critical clinic loads.</p>
+            <p><a href="activity-1.html">Open Activity 1 →</a></p>
+          </div>
+          <div>
+            <h3>Activity 2 — Wave Energy → Desalination</h3>
+            <p>Wave energy converter coupled to seawater reverse osmosis through power conditioning and ERD.</p>
+            <p><a href="activity-2.html">Open Activity 2 →</a></p>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Activity 3 — Solar-Powered Irrigation</h3>
+          <p>Solar PV drives pump via VFD to lift and distribute irrigation water with filtration and storage.</p>
+          <p><a href="activity-3.html">Open Activity 3 →</a></p>
+        </div>
+      </div>
+
+      <div class="card section">
+        <h3>How to use</h3>
+        <ol>
+          <li>Replace placeholder images under <code>assets/diagrams/</code>.</li>
+          <li>Edit the four sub-sections on each activity page to 150–200 words total.</li>
+          <li>Deploy with GitHub Pages or Netlify.</li>
+        </ol>
+      </div>
+    </main>
+  </div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const isLight = html.classList.toggle("light-theme");
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+}
+(function() {
+  const saved = localStorage.getItem("theme");
+  if (saved === "light") {
+    document.documentElement.classList.add("light-theme");
+  }
+})();
+</script>
+
+</body>
+</html>

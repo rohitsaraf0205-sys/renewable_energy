@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity 1 — Hybrid Solar–Wind for a Rural Health Clinic • Renewable Energy System Designs</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    
+        <aside class="sidebar" role="navigation" aria-label="Renewable Energy Portfolio">
+          <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <h1>Renewable Energy Portfolio</h1>
+          </div>
+          <nav class="nav"><a href="index.html" class="" aria-current="page" aria-label="🏠 Home">🏠 Home</a>
+<a href="activity-1.html" class="active" aria-current="page" aria-label="Activity 1 — Hybrid Solar–Wind">Activity 1 — Hybrid Solar–Wind</a>
+<a href="activity-2.html" class="" aria-current="page" aria-label="Activity 2 — Wave → Desalination">Activity 2 — Wave → Desalination</a>
+<a href="activity-3.html" class="" aria-current="page" aria-label="Activity 3 — Solar Irrigation">Activity 3 — Solar Irrigation</a></nav>
+          <div class="footer-note">© Your Name • Accessible, fast, and responsive.</div>
+        </aside>
+        
+    <main class="content">
+      <header class="header">
+        <h2>Activity 1 — Hybrid Solar–Wind for a Rural Health Clinic</h2>
+        <span class="badge">Block diagram + 150–200 words (current total ≈ 211 words)</span>
+      </header>
+<button class=\"theme-toggle\" onclick=\"toggleTheme()\">Toggle Theme</button>
+
+      <div class="card section">
+        <figure>
+          <img src="assets/diagrams/activity-1.png" alt="Hybrid solar and wind system feeding a rural clinic with battery and inverter">
+          <figcaption>Diagram provided by you. Optimized for display. Replace if you update the final version.</figcaption>
+        </figure>
+      </div>
+
+      <div class="card section kv">
+        <h3>Source of energy</h3>
+        <p>Solar irradiance and local wind serve as complementary resources. PV modules convert sunlight into direct-current
+power during daytime, while a small wind turbine harvests kinetic energy from night and overcast periods. The
+combination reduces seasonal and diurnal variability. A 48‑volt battery bank provides short‑term storage so critical
+medical services remain powered during resource dips or sudden load changes.</p>
+
+        <h3>Conversion process</h3>
+        <p>PV output is tracked by an MPPT controller and the turbine output is rectified and managed by a wind charge controller.
+Both feed a common DC bus that charges the battery through a BMS and DC breaker. A hybrid inverter/charger converts
+DC to 230 VAC for the clinic and can accept AC input from a backup generator if required. An energy management system
+monitors state‑of‑charge and load priority, shedding non‑critical panels before critical circuits are affected.</p>
+
+        <h3>Output / utilization</h3>
+        <p>The system supplies vaccine refrigeration, LED lighting, communication/IT, and essential diagnostic equipment.
+Non‑critical loads such as fans or water pumps are scheduled for sunny hours. Runtime targets are set to maintain
+24–72 hours of autonomy for critical circuits.</p>
+
+        <h3>Real-world relevance</h3>
+        <p>Hybridization improves availability versus PV‑only, reduces diesel logistics, and simplifies maintenance for remote
+clinics. It supports WHO cold‑chain requirements and enables telemedicine and night operations with minimal emissions.</p>
+      </div>
+    </main>
+  </div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const isLight = html.classList.toggle("light-theme");
+  localStorage.setItem("theme", isLight ? "light" : "dark");
+}
+(function() {
+  const saved = localStorage.getItem("theme");
+  if (saved === "light") {
+    document.documentElement.classList.add("light-theme");
+  }
+})();
+</script>
+
+</body>
+</html>
